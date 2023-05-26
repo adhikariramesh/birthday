@@ -5,7 +5,7 @@ import UserData from '@/utils/UserData';
 
 
 const page = () => {
-  const [user, setUser] = useState(UserData);
+  // const [user, setUser] = useState(UserData);
   const [count, setCount] = useState(5);
   const handleClear = ()=>{
     const container = document.querySelectorAll(".container");
@@ -19,7 +19,7 @@ const page = () => {
       <h1 className="title"> {count} Birthdays Today</h1>
       <div className="main_container">
         {
-          user.map((curElmnt) => {
+          UserData.map((curElmnt) => {
             return (
                 <div className="container" key={curElmnt.id}>
                   <div className="imgBody">
