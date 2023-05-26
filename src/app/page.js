@@ -4,7 +4,7 @@ import Image from 'next/image';
 import UserData from '@/utils/UserData';
 
 
-const page = () => {
+const Page = () => {
   // const [user, setUser] = useState(UserData);
   const [count, setCount] = useState(5);
   const handleClear = ()=>{
@@ -41,4 +41,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
